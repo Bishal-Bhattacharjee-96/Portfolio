@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="Styles/projects.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav" id="checknav">
+        <a href="home.html" >Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="Contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <div class="container">
+        <div class="allprojects">
+            <div class="project">
+                <img src="res.png" height="100px" width="100px">
+                <p><a href="#">Responsive Bootstrap Website</a></p>
+            </div>
+            <div class="project">
+                <img src="weather12.png" height="100px" width="100px">
+                <p><a href="#">Javascript Weather App</a></p>
+            </div>
+            <div class="project">
+                <img src="ecomm.jpg" height="100px" width="100px">
+                <p><a href="#">Wordpress Ecommerce</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="center">Copyright@<a href="#">bishaltech.net.in</a></div>
+        <div class="right">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("checknav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+}
+    </script>
+</body>
+</html>
